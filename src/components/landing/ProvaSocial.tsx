@@ -17,7 +17,7 @@ function Contador({ alvo, prefixo, sufixo }: { alvo: number; prefixo: string; su
     if (!el) return;
     const obs = new IntersectionObserver(
       ([entry]) => {
-        if (!entry.isIntersecting) return;
+        if (!entry?.isIntersecting) return;
         obs.disconnect();
         const inicio = performance.now();
         const passo = (agora: number) => {
