@@ -23,14 +23,25 @@ export function ProdutoCard({
 
   return (
     <article className="group flex w-[16rem] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-border bg-background transition-all hover:-translate-y-1 hover:shadow-xl sm:w-auto">
-      <div className="relative grid h-44 place-items-center bg-ice">
-        <span className="absolute left-3 top-3 rounded-full bg-pink px-2.5 py-1 text-[11px] font-bold text-background">
+      <div className="relative h-44 overflow-hidden bg-ice">
+        <span className="absolute left-3 top-3 z-10 rounded-full bg-pink px-2.5 py-1 text-[11px] font-bold text-background">
           -{desconto}%
         </span>
-        <span className="absolute right-3 top-3 rounded-full bg-background px-2.5 py-1 text-[10px] font-bold uppercase text-brand shadow-sm">
+        <span className="absolute right-3 top-3 z-10 rounded-full bg-background px-2.5 py-1 text-[10px] font-bold uppercase text-brand shadow-sm">
           {produto.tag}
         </span>
-        <Icone className="size-16 text-ink/20 transition-transform group-hover:scale-110" />
+
+        {produto.imagem ? (
+          <img
+            src={produto.imagem}
+            alt={produto.nome}
+            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+          />
+        ) : (
+          <div className="grid h-full w-full place-items-center">
+            <Icone className="size-16 text-ink/20 transition-transform group-hover:scale-110" />
+          </div>
+        )}
       </div>
 
       <div className="flex flex-1 flex-col p-4">

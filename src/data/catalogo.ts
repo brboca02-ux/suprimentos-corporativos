@@ -39,6 +39,7 @@ export type Produto = {
   precoAtacado: number;
   minimoAtacado: number;
   unidade: string;
+  imagem?: string;
 };
 
 export const PRODUTOS: Produto[] = [
@@ -52,6 +53,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 264.5,
     minimoAtacado: 5,
     unidade: "cx",
+    imagem: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=400&q=80",
   },
   {
     id: "p2",
@@ -63,6 +65,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 84.5,
     minimoAtacado: 10,
     unidade: "un",
+    imagem: "https://images.unsplash.com/photo-1612815154858-60aa4c59eaa6?w=400&q=80",
   },
   {
     id: "p3",
@@ -74,6 +77,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 55.9,
     minimoAtacado: 6,
     unidade: "pct",
+    imagem: "https://images.unsplash.com/photo-1607344645866-009c320b63e0?w=400&q=80",
   },
   {
     id: "p4",
@@ -85,6 +89,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 6.7,
     minimoAtacado: 24,
     unidade: "un",
+    imagem: "https://images.unsplash.com/photo-1583947215259-38e31be8751f?w=400&q=80",
   },
   {
     id: "p5",
@@ -96,6 +101,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 54.9,
     minimoAtacado: 10,
     unidade: "cx",
+    imagem: "https://images.unsplash.com/photo-1585336261022-680e295ce3fe?w=400&q=80",
   },
   {
     id: "p6",
@@ -107,6 +113,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 24.5,
     minimoAtacado: 10,
     unidade: "kit",
+    imagem: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80",
   },
   {
     id: "p7",
@@ -118,6 +125,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 129.9,
     minimoAtacado: 5,
     unidade: "kit",
+    imagem: "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=400&q=80",
   },
   {
     id: "p8",
@@ -129,6 +137,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 15.4,
     minimoAtacado: 12,
     unidade: "cx",
+    imagem: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=400&q=80",
   },
   {
     id: "p9",
@@ -140,6 +149,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 76.9,
     minimoAtacado: 6,
     unidade: "pct",
+    imagem: "https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=400&q=80",
   },
   {
     id: "p10",
@@ -151,6 +161,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 118.0,
     minimoAtacado: 5,
     unidade: "un",
+    imagem: "https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=400&q=80",
   },
   {
     id: "p11",
@@ -162,6 +173,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 36.5,
     minimoAtacado: 10,
     unidade: "pct",
+    imagem: "https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=400&q=80",
   },
   {
     id: "p12",
@@ -173,6 +185,7 @@ export const PRODUTOS: Produto[] = [
     precoAtacado: 99.9,
     minimoAtacado: 4,
     unidade: "rolo",
+    imagem: "https://images.unsplash.com/photo-1553413077-190dd305871c?w=400&q=80",
   },
 ];
 
