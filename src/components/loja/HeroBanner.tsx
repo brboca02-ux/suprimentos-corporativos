@@ -15,7 +15,7 @@ export function HeroBanner({ onCta }: { onCta: () => void }) {
   }, []);
 
   return (
-    <section id="topo" className="relative overflow-hidden bg-black">
+    <section id="topo" className="relative w-full overflow-hidden bg-white">
       {/* Slides */}
       {SLIDES.map((slide, idx) => (
         <div
@@ -28,23 +28,23 @@ export function HeroBanner({ onCta }: { onCta: () => void }) {
             src={slide.src}
             alt={slide.alt}
             onClick={onCta}
-            className="h-full w-full cursor-pointer object-cover"
+            className="h-full w-full cursor-pointer object-fill"
           />
         </div>
       ))}
 
-      {/* Espaçador para altura */}
-      <div className="aspect-[16/6] w-full sm:aspect-[16/5] lg:aspect-[16/4]" />
+      {/* Espaçador — mantém proporção 16:5 (similar ao banner da Acapel) */}
+      <div className="w-full" style={{ paddingBottom: "31.25%" }} />
 
       {/* Bolinhas de navegação */}
-      <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+      <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-2">
         {SLIDES.map((_, idx) => (
           <button
             key={idx}
             aria-label={`Banner ${idx + 1}`}
             onClick={() => setI(idx)}
             className={`h-2 rounded-full transition-all ${
-              idx === i ? "w-8 bg-white" : "w-2 bg-white/50"
+              idx === i ? "w-8 bg-white shadow" : "w-2 bg-white/60 shadow"
             }`}
           />
         ))}
