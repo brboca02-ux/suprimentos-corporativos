@@ -1,6 +1,6 @@
 {
-  "name": "ImobiHunter Pro - Captação de Imóveis & CRM",
-  "description": "Plataforma integrada de captação de imóveis com extensão para Zap Imóveis, API RESTful de ingestão de dados e CRM para abordagem comercial e oferta de venda.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "name": "Nexus Suprimentos",
+  "description": "Loja online e distribuidora B2B/B2C de papelaria, material escolar, embalagens e suprimentos de escritório com faturamento para empresas e venda no varejo.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
