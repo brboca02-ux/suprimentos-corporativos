@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>ImobiHunter Pro</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="header">
+      <div class="logo-area">
+        <div class="logo-icon">🏢</div>
+        <div class="title-wrap">
+          <div style="display: flex; align-items: center; gap: 4px;">
+            <h1 style="margin: 0; font-size: 14px;">ImobiHunter Pro</h1>
+            <span style="font-size: 9px; background: #2563eb; color: #fff; padding: 1px 4px; border-radius: 4px; font-weight: bold;">v1.2.1</span>
+          </div>
+          <p class="subtitle">Captador Zap Imóveis & CRM</p>
+        </div>
+      </div>
+      <div id="conn-status" class="status-pill status-checking">
+        <span class="status-dot"></span>
+        <span id="conn-label">Verificando...</span>
+      </div>
+    </header>
+
+    <div class="tab-info-card">
+      <div class="tab-label">Página Atual:</div>
+      <div id="tab-site-title" class="tab-title">Carregando aba...</div>
+      <div id="tab-status-badge" class="tab-badge">Detectando Zap Imóveis...</div>
+    </div>
+
+    <div class="action-section">
+      <button id="btn-capture-now" class="btn-main" disabled>
+        <span class="btn-icon">⚡</span>
+        <span id="btn-capture-text">Capturar Imóveis & Salvar</span>
+      </button>
+
+      <button id="btn-open-crm" class="btn-outline">
+        <span class="btn-icon">💼</span>
+        <span>Abrir CRM Web</span>
+      </button>
+    </div>
+
+    <div id="feedback-box" class="feedback-box" style="display: none;"></div>
+
+    <details class="config-details" open>
+      <summary class="config-summary">⚙️ Configurações da API</summary>
+      <div class="config-body">
+        <label for="input-api-url" class="config-label">Endereço da API do CRM:</label>
+        <div class="config-input-group">
+          <input type="text" id="input-api-url" value="https://ais-dev-7rflnxwdu42lapvwucpuhg-880574744309.us-east1.run.app" placeholder="https://..." />
+          <button id="btn-save-api" class="btn-small">Salvar</button>
+        </div>
+        <div class="quick-api-actions" style="display: flex; gap: 4px; margin-top: 4px;">
+          <button id="btn-set-cloud" class="btn-micro" style="flex: 1; padding: 4px; font-size: 10px; background: #1e3a8a; border: 1px solid #3b82f6; color: #dbeafe; border-radius: 6px; cursor: pointer;">
+            ☁️ Usar Nuvem (AI Studio)
+          </button>
+          <button id="btn-set-local" class="btn-micro" style="flex: 1; padding: 4px; font-size: 10px; background: #1e293b; border: 1px solid #475569; color: #cbd5e1; border-radius: 6px; cursor: pointer;">
+            💻 Usar Local (3000)
+          </button>
+        </div>
+        <p class="config-help" style="margin-top: 4px;">
+          Se o servidor local não estiver rodando no seu terminal, clique em <strong>Usar Nuvem</strong>!
+        </p>
+      </div>
+    </details>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
